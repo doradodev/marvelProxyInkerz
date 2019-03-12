@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 var md5 = require('md5');
 const BASE_URL = 'https://gateway.marvel.com:443/v1/public/'
 const API_KEY = '8e712a36078e4ebbdbb9099254dd8db6'
-const API_KEY_P = '6ccfcc9dd74508a4ffdcb6e63b5fc03d0c5ea2da'
+const API_KEY_P = ''
 
 async function getCharacters (limit, offset) {
   const ts = new Date().getTime()

@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e40d7f9-e792-4b4e-bcc1-3a3c832449b2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/containers/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/containers/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/apiService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/apiService.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/utils/api.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiService.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/apiService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -83,10 +84,10 @@
         <option value="$PROJECT_DIR$/client/src/header/component/header.js" />
         <option value="$PROJECT_DIR$/client/src/pages/containers/home.css" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/services/apiService.js" />
         <option value="$PROJECT_DIR$/lib/api.js" />
         <option value="$PROJECT_DIR$/client/src/utils/api.js" />
         <option value="$PROJECT_DIR$/client/src/pages/containers/home.js" />
+        <option value="$PROJECT_DIR$/services/apiService.js" />
       </list>
     </option>
   </component>
@@ -148,6 +149,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="marvelProxyInkerz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marvelProxyInkerz" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,7 +256,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50429000" />
+    <option name="totallyTimeSpent" value="50700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -497,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/apiService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/App.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -521,6 +520,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/apiService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
