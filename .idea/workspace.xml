@@ -2,33 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e40d7f9-e792-4b4e-bcc1-3a3c832449b2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/characters/components/character.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/characters/components/character.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/containers/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/containers/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/search/containers/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/search/containers/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/precache-manifest.5160092dd000d1820f11940bb6caa2ad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/main.4facc8b7.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/main.4facc8b7.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/2.8f71a45e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/2.8f71a45e.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/main.cf0060de.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/main.cf0060de.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/runtime~main.a8a9905a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/runtime~main.a8a9905a.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/logo.5d5d9eef.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/apiService.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/apiService.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +21,25 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/apiService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/pages/containers/home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -104,7 +95,6 @@
         <option value="$PROJECT_DIR$/client/src/pages/components/home-layout.js" />
         <option value="$PROJECT_DIR$/client/src/characters/containers/character.js" />
         <option value="$PROJECT_DIR$/controllers/character.js" />
-        <option value="$PROJECT_DIR$/services/apiService.js" />
         <option value="$PROJECT_DIR$/client/package.json" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/client/src/App.js" />
@@ -114,6 +104,7 @@
         <option value="$PROJECT_DIR$/client/src/search/containers/search.css" />
         <option value="$PROJECT_DIR$/client/src/utils/api.js" />
         <option value="$PROJECT_DIR$/client/src/pages/containers/home.js" />
+        <option value="$PROJECT_DIR$/services/apiService.js" />
       </list>
     </option>
   </component>
@@ -307,12 +298,12 @@
       <updated>1552297759400</updated>
       <workItem from="1552297760977" duration="8841000" />
       <workItem from="1552339292687" duration="147000" />
-      <workItem from="1552339468544" duration="28722000" />
+      <workItem from="1552339468544" duration="28821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37710000" />
+    <option name="totallyTimeSpent" value="37809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-311" width="1936" height="1096" extended-state="6" />
@@ -453,20 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/apiService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/search/containers/search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -484,13 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/utils/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/pages/containers/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -498,6 +468,27 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/utils/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/apiService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
