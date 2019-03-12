@@ -18,6 +18,17 @@ async function init () {
   try {
     await server.register(inert)
     await server.register({
+      plugin: require('hapi-cors'),
+      options: {
+        origins: ['*'],
+        allowCredentials: 'true',
+        exposeHeaders: ['content-type', 'content-length'],
+        maxAge: 600,
+        methods: ['POST, GET, OPTIONS'],
+        headers: ['Accept', 'Content-Type', 'Authorization']
+      }
+    })
+    await server.register({
       plugin: require('./lib/api'),
       options: {
         prefix: 'api'

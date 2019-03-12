@@ -12,8 +12,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "postbuild": "npm run deploy",
-    "predeploy": "rd ../public && mkdir ../public",
-    "deploy": "cp -R build/** ../public",
+    "predeploy": "rd ../public && md ../public",
+    "deploy": "Xcopy -R build/** ../public",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -25,5 +25,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "run-script-os": "^1.0.5"
+  }
 }
