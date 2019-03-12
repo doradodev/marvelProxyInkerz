@@ -5,13 +5,14 @@
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-materialize": "^2.6.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "postbuild": "npm run deploy",
-    "predeploy": "rm -rf ../public && mkdir ../public",
+    "predeploy": "rd ../public && mkdir ../public",
     "deploy": "cp -R build/** ../public",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
