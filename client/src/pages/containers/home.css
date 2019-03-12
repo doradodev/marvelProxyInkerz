@@ -1,0 +1,25 @@
+.img-responsive{
+    padding-top: 1rem;
+}
+
+.Button {
+    margin-top: 1.5rem;
+}
+
+input[type=text]:focus:not([readonly]){
+    border-bottom: 1px solid #E61C1C;
+    box-shadow: 0 1px 0 0 #E61C1C;
+}
+
+input[type=text]:focus:not([readonly])+label{
+
+    color: #E61C1C;
+}
+
+.btn{
+    background-color: #E61C1C;
+}
+
+.btn:hover{
+    background-color: #424242;
+}

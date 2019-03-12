@@ -3,6 +3,7 @@
 const Hapi = require('hapi')
 const inert = require('inert')
 const path = require('path')
+const API = require('./services/apiService');
 
 const server = Hapi.server({
   port: process.env.PORT || 3001,
@@ -16,6 +17,8 @@ const server = Hapi.server({
 
 async function init () {
   try {
+
+
     await server.register(inert)
     await server.register({
       plugin: require('hapi-cors'),
@@ -32,6 +35,13 @@ async function init () {
       plugin: require('./lib/api'),
       options: {
         prefix: 'api'
+      }
+    })
+
+    server.method('getCharacters', API.getCharacters, {
+      cache:{
+        expiresIn: 1000 * 60,
+        generateTimeout: 2000
       }
     })
 

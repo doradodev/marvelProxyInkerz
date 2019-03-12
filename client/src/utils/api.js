@@ -1,14 +1,14 @@
 
 
 class Api {
-    async getCharacters(offset){
-      const query = await fetch('http://localhost:3001/api/characters?offset='+offset);
+    async getCharacters(limit, offset){
+      const query = await fetch('http://localhost:3001/api/characters?limit='+limit+'&offset='+offset);
       const  data  = await query.json();
       return data
     }
 
   async getCharactersByQuery(search, offset){
-    const query = await fetch('http://localhost:3001/api/characters?nameStartsWith='+query+'offset='+offset);
+    const query = await fetch('http://localhost:3001/api/character/'+search);
     const  data  = await query.json();
     return data
   }
