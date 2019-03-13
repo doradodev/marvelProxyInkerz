@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './home.css'
 import API from '../../utils/api'
-import { Card, CardTitle, Row, Col, Pagination, Input, Button, ProgressBar } from 'react-materialize'
-import Header from '../../header/component/header'
+import { Button, Card, CardTitle, Col, Input, Pagination, ProgressBar, Row } from 'react-materialize'
 
 class Home extends Component {
 
@@ -11,39 +10,65 @@ class Home extends Component {
     this.state = {
       characters: [],
       search: '',
-      offset: 1,
+      offset: 0,
       limit: 12,
-      loader: true
+      loader: true,
+      currentPage:1,
+      totalPages: 0
     }
   }
 
-  onSelect(e){
-    console.log('onselect',e)
+  handlePagination = event => {
+    let offset = (event) * this.state.limit;
+    if(event === 1){
+      offset = 0;
+    }
+    this.setState({
+      characters:[],
+      loader: true,
+      currentPage: event
+    })
+    this.callToApi(offset);
   }
   handleSearch  = event =>  {
     this.setState({
       characters:[],
-      loader: true
+      loader: true,
+      currentPage: 1
     })
-    this.componentWillReceiveProps();
+    this.callToApi(0);
   }
   handleSearchChange = event => {
     this.setState({search: event.target.value})
   }
+
+  handleKeyPress = event => {
+    if(event.key === 'Enter') {
+      this.setState({
+        characters: [],
+        loader: true,
+        currentPage: 1
+      })
+      this.callToApi(0);
+    }
+  }
   async componentDidMount () {
-    this.state.characters = await API.getCharacters(this.state.limit, this.state.offset)
+    this.state.characters = await API.getCharacters(this.state.search, this.state.limit, this.state.offset)
+    const total =  Math.ceil(this.state.characters.total / this.state.characters.limit);
     this.setState({
-      characters: this.state.characters,
-      loader: false
+      characters: this.state.characters.result,
+      loader: false,
+      totalPages: total
     })
   }
 
-  async componentWillReceiveProps(){
-
-    this.state.characters = await API.getCharactersByQuery(this.state.search, this.state.offset)
+  async callToApi(offset){
+    this.state.characters = await API.getCharacters(this.state.search, this.state.limit, offset)
+    const total =  Math.ceil(this.state.characters.total / this.state.characters.limit);
     this.setState({
-      characters: this.state.characters,
-      loader: false
+      characters: this.state.characters.result,
+      loader: false,
+      totalPages: total
     })
   }
 
@@ -52,7 +77,7 @@ class Home extends Component {
 
       <div>
         <Row>
-          <Input  name = "search" s={8} label="SEARCH" onChange={this.handleSearchChange}/>
+          <Input  name = "search" s={9} label="SEARCH" onChange={this.handleSearchChange} onKeyPress={this.handleKeyPress}/>
           <Button className='Button' s={3} onClick={this.handleSearch}>Search</Button>
         </Row>
         <Row>
@@ -72,7 +97,7 @@ class Home extends Component {
           }
         </Row>
         <div className="center-align">
-          {!this.state.loader ? <Pagination/>:null}
+          {!this.state.loader ? <Pagination activePage={this.state.currentPage} maxButtons={10} items={this.state.totalPages} onSelect={this.handlePagination}/>:null}
         </div>
       </div>
     )

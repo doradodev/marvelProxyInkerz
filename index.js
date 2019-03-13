@@ -3,7 +3,7 @@
 const Hapi = require('hapi')
 const inert = require('inert')
 const path = require('path')
-const API = require('./services/apiService');
+const API = require('./services/apiService')
 
 const server = Hapi.server({
   port: process.env.PORT || 3001,
@@ -17,7 +17,6 @@ const server = Hapi.server({
 
 async function init () {
   try {
-
 
     await server.register(inert)
     await server.register({
@@ -39,20 +38,11 @@ async function init () {
     })
 
     server.method('getCharacters', API.getCharacters, {
-      cache:{
+      cache: {
         expiresIn: 1000 * 60,
         generateTimeout: 2000
       }
     })
-
-    server.route({
-      method: 'GET',
-      path: '/home',
-      handler: (req, h) => {
-        return h.file('index.html')
-      }
-    })
-
     server.route({
       method: 'GET',
       path: '/{param*}',
@@ -63,8 +53,6 @@ async function init () {
         }
       }
     })
-
-
     await server.start()
   } catch (error) {
     console.error(error)
