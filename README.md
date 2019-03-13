@@ -20,7 +20,7 @@ You will need the following things properly installed on your computer.
 ```bash
 npm install
 ```
-### build
+### Start
 ```bash
 node index
 ```
