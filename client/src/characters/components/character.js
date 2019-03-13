@@ -1,16 +1,20 @@
 import React from 'react'
 import {
   Card,
-  CardTitle
+  CardTitle,
+  Col
 } from 'react-materialize'
 
 function Character (props) {
     return(
-      <Card header={<CardTitle reveal image={"img/office.jpg"} waves='light'/>}
-            title={props.name}
-            reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-        <p><a href="#">This is a link</a></p>
-      </Card>
+      <Col m={6}>
+        <Card
+          header={<CardTitle className="img-responsive center-align" reveal image={props.img}/>}
+          title={props.name}
+          className="center-align"
+          reveal={<p>{props.description}</p>}>
+        </Card>
+      </Col>
     )
 }
 
