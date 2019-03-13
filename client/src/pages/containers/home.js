@@ -21,13 +21,7 @@ class Home extends Component {
   }
 
   async componentDidMount () {
-    this.state.characters = await API.getCharacters(this.state.search, this.state.limit, this.state.offset)
-    const total = Math.ceil(this.state.characters.total / this.state.characters.limit)
-    this.setState({
-      characters: this.state.characters.result,
-      loader: false,
-      totalPages: total
-    })
+    await this.callToApi(0)
   }
 
   handlePagination = event => {
